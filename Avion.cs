@@ -6,25 +6,25 @@ using System.Threading.Tasks;
 
 namespace Ejercicio_POO_LAB_Transporte
 {
-    public class Automovil : Transporte
+    class Avion : Transporte
     {
-        public Automovil (int pasajeros, int id) : base(pasajeros, id)
+        public Avion(int pasajeros, int id) : base(pasajeros, id)
         {
 
         }
         public override string Avanzar()
         {
-            return $"Soy un automovil que avanzo con {pasajeros} pasajeros.";
+            return $"Soy un avion que vuela con {pasajeros} pasajeros.";
         }
 
         public override string Detenerse()
         {
-            return $"Soy un automovil que avanzo con {pasajeros} pasajeros.";
+            return $"Soy un automovil que aterriza con {pasajeros} pasajeros.";
         }
 
         public override void Print()
         {
-            Console.WriteLine($"Automovil {id}: {pasajeros} pasajeros.");
+            Console.WriteLine($"Avion {id}: {pasajeros} pasajeros.");
         }
 
     }

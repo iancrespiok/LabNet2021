@@ -8,10 +8,19 @@ namespace Ejercicio_POO_LAB_Transporte
 {
     public abstract class Transporte
     {
-        int pasajeros;
+        public Transporte(int pasajeros, int id)
+        {
+            this.pasajeros = pasajeros;
+            this.id = id;
+        }
+
+        public int pasajeros { get; set; }
+        public int id { get; set; }
 
         public abstract string Avanzar();
 
         public abstract string Detenerse();
+
+        public abstract void Print();
     }
 }
